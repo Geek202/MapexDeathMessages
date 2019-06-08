@@ -1,4 +1,5 @@
-# New death messages
+[![Build Status](https://travis-ci.com/Geek202/MapexDeathMessages.svg?branch=master)](https://travis-ci.com/Geek202/MapexDeathMessages)
+# The Mapex Death Messages
 ## Fall damage
 \<username> fell. Splat.
 ## Cactus
