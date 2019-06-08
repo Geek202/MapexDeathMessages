@@ -1,0 +1,3 @@
+name: DeathChange
+main: me.geek.tom.DeathChanger.DeathChangerMain
+version: 1.0-SNAPSHOT
