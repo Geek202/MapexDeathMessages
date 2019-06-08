@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Geek202/MapexDeathMessages.svg?branch=master)](https://travis-ci.com/Geek202/MapexDeathMessages)
+[![Coverage Status](https://coveralls.io/repos/github/Geek202/MapexDeathMessages/badge.svg?branch=master)](https://coveralls.io/github/Geek202/MapexDeathMessages?branch=master)
 # The Mapex Death Messages
 ## Fall damage
 \<username> fell. Splat.
