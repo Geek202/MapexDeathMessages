@@ -38,9 +38,24 @@ public class DeathMessageChanger implements Listener {
         } else if (cause.equals(EntityDamageEvent.DamageCause.LIGHTNING)) {
             event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " encountered a shocking death.");
         } else if (cause.equals(EntityDamageEvent.DamageCause.MAGIC)) {
-            event.setDeathMessage(ChatColor.LIGHT_PURPLE + "You aren't a wizard" + ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + "!");
-        } else if (cause.equals(EntityDamageEvent.DamageCause.MELTING)) {
-            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " lol");
+            event.setDeathMessage(ChatColor.LIGHT_PURPLE + "You aren't a wizard " + ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + "!");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.POISON)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " drank some suspicious liquid. It was poison.");
+        } else if  (cause.equals(EntityDamageEvent.DamageCause.PROJECTILE)) {
+            // TODO: Work out what entity dealt the damage and adjust message accordingly
+        } else if (cause.equals(EntityDamageEvent.DamageCause.STARVATION)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " didn't have enough food. \"please sir, can I have some more\"");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.SUFFOCATION)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " is now claustrophobic.");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.SUICIDE)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " gave up on life.");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.THORNS)) {
+            // TODO: Add enemy thorns info
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " was stabbed by someone's armor.");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.VOID)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " fell into the infinite nothingness.");
+        } else if (cause.equals(EntityDamageEvent.DamageCause.WITHER)) {
+            event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " withered into nothingness.");
         } else {
             event.setDeathMessage(ChatColor.DARK_PURPLE + event.getEntity().getDisplayName() + ChatColor.LIGHT_PURPLE + " died for another reason.");
         }
